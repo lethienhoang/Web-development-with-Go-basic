@@ -1,0 +1,9 @@
+<h1>{{.PageTitle}}<h1>
+    <ul>
+        {{range .MenuItems}}
+            {{if .IsActive}}
+                <li>{{.Title}}</li>
+           
+            {{end}}
+        {{end}}
+    </ul>

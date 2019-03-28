@@ -1,0 +1,15 @@
+{{ if .Success}}
+    <h1>Successfully</h1>
+{{ else }}
+    <h1>SignUp Form</h1>
+    <form method="POST" action="http://localhost:8080/">
+        <label>Email</label>
+        <input type="text" name="email">
+        <label>UserName</label>
+        <input type="text" name="username">
+        <label>Password</label>
+        <input type="password" name="password">
+        <input type="submit" value="Add">
+        <input type="text" name="Success" value="false">
+    </form>
+{{ end }}
